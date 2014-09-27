@@ -11,7 +11,7 @@ Simple [WebRTC](http://www.webrtc.org/) implementation with [Node.js](http://nod
 1. Start the server `npm install`
 1. Open up a browser and go to `localhost:3000`
 
-#Resource
+##Resource
 
 1. http://www.webrtc.org/
 2. http://www.html5rocks.com/en/tutorials/webrtc/basics/
