@@ -1,0 +1,13 @@
+{
+	"name": "iard-rtc",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "nodemon app.js"
+	},
+	"dependencies": {
+		"socket.io": "0.9.12",
+		"node-static": "*",
+		"nodemon": "*"
+	}
+}

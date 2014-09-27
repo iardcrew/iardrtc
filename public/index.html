@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Iard RTC</title>
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		<style>
+			.page-header {
+				margin: 20px 0 10px; 
+				padding: 0px;
+			}
+
+			#call-container {
+				margin-top: 180px;
+			}
+
+			#message-box {
+				text-align: center; 
+				margin-top: 20px;
+			}
+
+			#local-video {
+				position: absolute; 
+				bottom: 15px; 
+				right: 35px;
+			}
+
+			#remote-video,
+			#local-video {
+				padding: 0;
+				box-shadow: 0 0 10px 1px rgba(74, 137, 151, 0.5);
+			}
+
+			#hangup-button {
+				position: absolute; 
+				bottom: 10px; 
+				left: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="page-header">
+					<h1>IARD RTC</h1>
+				</div>
+				<div class="col-md-12" id="call-container">
+					<button class="btn btn-primary btn-lg col-md-2 col-md-offset-5" id="call-button">Call someone</button>
+					<h4 class="col-md-12" id="message-box"></h4>
+				</div>
+				<div class="col-md-12" id="video-container" style="display: none">
+					<video class="col-md-12" id="remote-video" autoplay muted></video>
+					<video class="col-md-3" id="local-video" autoplay muted></video>
+					<button class="btn btn-danger btn-lg" id="hangup-button">Hang Up</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/rtc.apps.js"></script>
+</html>
